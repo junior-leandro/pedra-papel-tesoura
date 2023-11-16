@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import Home from './page'
 
 
 
@@ -20,7 +21,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className='bg-gradient-radial h-screen w-screen bg-top bg-cover from-[#1F3756] to-[#141539]'>
-        {children}
+        <Home />
+        <footer className='flex justify-center items-center'>
+          <span className='text-white text-sm'>Frontend Mentor Challenge | Code by Junior</span>
+        </footer>
       </body>
 
     </html>
